@@ -1,12 +1,6 @@
-$(document).ready(function() {
+var myApp = angular.module('myApp', []);
 
-//alert('asdf');
-
-    $('.block').click(function() {
-        $('.block').hide('slow', function() {
-		alert("block has dissappeared!");
-	});
-    });
-
+myApp.controller('myController', function($scope) {
+	$scope.name = "Mark"
 
 });
